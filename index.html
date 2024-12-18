@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>線上測驗系統</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1>線上測驗系統</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="quiz-info">
+            <div class="timer" id="timer">剩餘時間: <span>--:--</span></div>
+            <div class="progress" id="progress">題目: <span>0/0</span></div>
+        </div>
+
+        <div id="quiz-container">
+            <!-- 題目會在這裡動態生成 -->
+        </div>
+
+        <div class="button-container">
+            <button id="next-btn" class="nav-btn">下一題</button>
+            <button id="submit-btn" class="submit-btn" style="display: none;">提交答案</button>
+        </div>
+        
+        <div id="result" class="result-container"></div>
+        <div id="answer-review" class="answer-review"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
